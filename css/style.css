@@ -4,9 +4,9 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+/*Changed HTML font size from 10px to 18px*/
 html {
-  font-size: 10px;
+  font-size: 18px;
   background-color: #dde;
 }
 
@@ -39,20 +39,20 @@ font[size="6"] {
   font-size: 3rem;
   text-align: center;
 }
-
+/*Changed font size to 2.8*/
 font[size="5"] {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
-
+/*Changed font size to 2*/
 p, li, table {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
 /* || header layout */
-
+/* Changed the background color from green to white*/
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: #ecbeec;
 }
 
 article, footer, .secondary {
@@ -65,7 +65,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ecbeec;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -136,12 +136,12 @@ footer {
 }
 
 /* Table styling */
-
+/* Changed table colors*/
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: rgb(216, 145, 145);
   border-collapse: collapse;
-}
+}   
 
 th, td {
   padding: 10px;
@@ -154,9 +154,9 @@ td {
 th[scope="col"] {
   border-bottom: 1px solid black;
 }
-
+/* Changed table colors*/
 tbody tr:nth-child(odd) {
-  background-color: #def;
+  background-color: rgb(255, 199, 199);
 }
 
 /* styling content images and audio */
@@ -171,9 +171,9 @@ audio {
 }
 
 /* Comments styling */
-
+/*Changed color of .comments section*/
 .comments {
-  background-color: #def;
+  background-color: rgb(216, 145, 145);
   padding: 10px;
 }
 
