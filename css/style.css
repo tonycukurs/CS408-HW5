@@ -40,16 +40,32 @@ h3 {
   font-size: 3rem;
   text-align: center;
 }
-/*Changed font size to 2.8*/
+/*CHANGED: font size to 2.8*/
 h2 {
   font-size: 2rem;
 }
-/*Changed font size to 2*/
-p, li, table, input, label {
+/*CHANGED: font size to 2*/
+li, table, input, label {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
 }
+/*CHANGED: gave p its own type of font*/
+p {
+  font-family: 'Georgia', serif ;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+/*ADDED: Keeps footer <p> seperate from the main <p>*/
+footer p {
+  font-size: 0.9rem;  /* Make text smaller */
+  color: rgb(0, 0, 0);        /* Change text color */
+  text-align: center; /* Center the text */
+  font-style: italic; /* Make text italic */
+}
+
 
 /* || header layout */
 /* Changed the background color from green to white*/
