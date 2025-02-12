@@ -17,10 +17,11 @@ body {
 }
 
 /* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
+/*CHANGED: changed the font sizes to h1, h2, h3 for accessibility for 
+screen readers*/
+h1, h2, h3{
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #1a1a1a;
 }
 
 p, input, li, table, label {
@@ -28,23 +29,24 @@ p, input, li, table, label {
   color: #2a2a2a;
 }
 
-font[size="7"] {
+ h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h3 {
   font-size: 3rem;
   text-align: center;
 }
 /*Changed font size to 2.8*/
-font[size="5"] {
+h2 {
   font-size: 2rem;
 }
 /*Changed font size to 2*/
-p, li, table {
+p, li, table, input, label {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
 }
@@ -161,6 +163,7 @@ tbody tr:nth-child(odd) {
 
 /* styling content images and audio */
 
+/* Center images and audio */
 img, audio {
   display: block;
   margin: 0 auto;
@@ -169,6 +172,41 @@ img, audio {
 audio {
   width: 500px;
 }
+
+/* Style for the transcript */
+.audio-transcript {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style for the transcript heading */
+.audio-transcript h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style for the download link */
+audio + p {
+  text-align: center;
+  font-size: 16px;
+}
+
+audio + p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+audio + p a:hover {
+  text-decoration: underline;
+}
+
 
 /* Comments styling */
 /*Changed color of .comments section*/
